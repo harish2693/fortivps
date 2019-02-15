@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-  apt-get install -y expect wget net-tools iproute ipppd iptables ssh curl && \
+  apt-get install -y expect wget net-tools iproute ipppd iptables ssh curl openssh-client sshpass && \
   rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
